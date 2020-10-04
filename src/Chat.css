@@ -1,0 +1,162 @@
+.chat{
+    flex:0.9;
+/* 
+    entire chat section want to be in flex but not in row */
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.chat__header{
+
+    /* info goes to row */
+    display: flex;
+    
+    /* takes some good space from top */
+    padding: 20px;
+    
+    /* Avatar and info are now in center */
+    align-items: center;
+
+    /* header section closed with a border */
+    border-bottom: 1px solid lightgray;
+}
+
+.chat__header__info{
+/* icons were moved to last  */
+    flex: 1;
+/* 
+    now there is space between avatar and info */
+    padding-left: 20px;
+
+}
+
+.chat__header__info >h3{
+    /* margin between Room name and Last seen */
+margin-bottom: 3px;
+
+/* Room Name font weight */
+font-size: 14px;
+font-weight: 500;
+}
+
+.chat__header__info >p{
+    /* Last seen color will be turned */
+color: gray;
+}
+
+.chat__headerRight{
+    display: flex;
+    justify-content: space-between;
+
+    /* we are giving min-width */
+    min-width: 100px;
+}
+
+.chat__body{
+    flex: 1;
+    /* background image of whatsapp */
+    background-image: url("https://user-images.githubusercontent.com/15075759/28719144-86dc0f70-73b1-11e7-911d-60d70fcded21.png");
+
+    /* above image gets repeated */
+    background-repeat: repeat;
+
+    background-position: center;
+
+    /* dont want to touch the sides */
+    padding: 30px;
+
+    /* scroll bar added */
+    overflow:scroll;
+    
+}
+.chat__message{
+    
+    position: relative;
+
+    /* text message font size */
+    font-size: 16px;
+
+    /* text and white box padding */
+    padding:10px;
+
+    background-color: #ffffff;
+
+    /* edges shaped */
+    border-radius: 10px;
+
+    /* size depends on text size */
+    width: fit-content;
+
+    /* so that other messages can't touch */
+    margin-bottom: 30px;
+}
+
+.chat__name{
+    /* this absoulute now relates with relative at top */
+    position: absolute;
+
+    /* name goes to top */
+    top: -15px;
+    /* starts look bolder */
+    font-weight: 800;
+
+    font-size: x-small;
+}
+
+.chat__timestamp{
+    margin-left: 10px;
+    font-size: xx-small;
+}
+
+.chat__reciever{
+
+    /* pushes to right side like i send a message */
+    margin-left: auto;
+
+    /* whatsapp green color */
+    background-color: #dcf8c6;
+}
+
+.chat_footer{
+    /* all comes to row */
+    display: flex;
+    justify-content: space-between;
+
+    /* center in the footer box */
+    align-items: center;
+    
+    /* message outer box area  */
+    height: 62px;
+
+    /* message outer box area  */
+    border-top: 1px solid lightgray;
+}
+
+/* targeting the form */
+.chat_footer > form{
+    flex: 1;
+    display: flex;
+}
+
+.chat_footer > form> input{
+    /* we want input to take the majority of the form */
+    flex: 1;
+    border-radius: 30px;
+    
+    /* more space to right */
+    padding: 10px;
+    /* without border */
+    border: none;
+}
+
+.chat_footer > form> button{
+    display: none;
+}
+
+.chat_footer > .MuiSvgIcon-root{
+    /* icons were moved a bit and color is turned */
+    padding: 10px;
+    color: gray;
+
+}

@@ -1,0 +1,97 @@
+.sidebar{
+
+    /* where your icons gonna take end */
+    flex:0.1;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar__search{
+
+    /* border box that is in white color and the entire content will be in middle */
+    display: flex;
+    
+    align-items: center;
+
+    /* this give the white color box with below dimensions */
+    background-color: #f6f6f6;
+
+    /* if i remove both of them then it takes the space of placeholder */
+    height: 39px;
+    padding: 10px;
+}
+
+.sidebar__searchContainer{
+
+    /* search icon and search field become horizontally straight */
+    display: flex;
+
+    /* search icon will fit with search box */
+    align-items: center;
+
+    background-color: white;
+
+    width:100%;
+    height: 35px;
+    border-radius: 20px;
+
+}
+
+.sidebar__searchContainer > .MuiSvgIcon-root{
+
+/* search icon color changes and moves a bit right*/
+color:gray;
+padding:10px;
+}
+
+
+.sidebar__searchContainer >input{
+
+    /* input border is vanished */
+border:none;
+margin-left: 10px;
+}
+
+.sidebar__header{
+    /* all the three icons will go to side */
+    display: flex;
+
+    /* space between Avatar and 3 icons */
+    justify-content: space-between;
+
+    /* both avatar and icons moved down from above margin */
+    padding:20px;
+
+    /* there is vertical line after the icons */
+    border-right: 1px solid lightgrey;
+
+}
+
+.sidebar__headerRight{
+    display: flex;
+
+    /* avatar and 3 icons looks in center now */
+    align-items: center;
+
+    justify-content: space-between;
+
+    min-width: 13.5vw;
+}
+
+/* nothing changed */
+.sidebar__headerRight > .MuiSvgIcon-root{
+    margin-right: 2vw;
+    font-size: 24px !important;
+    }
+
+
+    .sidebar__chats{
+        /* this takes full box column */
+        flex:1;
+
+        background-color: white;
+
+        /* gives a scroll */
+        overflow: scroll;
+    }

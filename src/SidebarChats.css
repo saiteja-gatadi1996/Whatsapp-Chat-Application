@@ -1,0 +1,36 @@
+.sidebarChat{
+
+    /* letters side towards row to Avatar */
+    display: flex;
+    
+    /* inside margin */
+    padding:20px;
+
+    cursor: pointer;
+
+    /* border for each chat */
+    border-bottom: 1px solid #f6f6f6;
+}
+
+.sidebarChat:hover{
+background-color:#ebebeb;
+}
+
+.sidebarChat__info{
+    /* Avatar and the text pushes further */
+    margin-left: 15px;
+}
+
+
+.sidebarChat__info > h2{
+
+    font-size: 12px;
+    margin-bottom: 8px;
+
+}
+
+/* all the blue links now turns to black */
+a{
+    text-decoration: none !important;
+    color: black;
+}
